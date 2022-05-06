@@ -1,0 +1,358 @@
+/*헤더*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  padding: 25px 35px;
+  .logo {
+    a {
+      display: block;
+      width: 150px;
+    }
+  }
+  .title {
+    display: block;
+    &.none {
+      display: none;
+    }
+  }
+  .menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+footer {
+  background: #000;
+  .container {
+    padding: 180px 100px 100px;
+  }
+
+  .menu {
+    padding-bottom: 320px;
+    a {
+      display: block;
+      width: 100%;
+      font-size: 120px;
+      line-height: 140px;
+      font-weight: 700;
+      color: white;
+      font-family: 'Lexend Deca', sans-serif;
+      &:hover {
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white,0 -1px white;
+        color: #000;
+      }
+    }
+  }
+  .info {
+    padding-bottom: 50px;
+    a {
+      display: block;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 10px;
+      color: white;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+  }
+  p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    &.gray_text {
+      color: #747474;
+    }
+  }
+}
+
+.content {
+  margin-bottom: 100px;
+}
+/*메인 차트*/
+.board_header {
+  h2 {
+    font-family: '';
+    font-size: 86px;
+    font-weight: bold;
+    span {
+      font-family: 'Jost';
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black,0 -1px black;
+      //-webkit-text-stroke: 1px #000;
+      -webkit-text-fill-color: #fff;
+      color: white;
+    }
+    sup {
+      font-size: 12px;
+    }
+  }
+  p {
+    padding-top: 10px;
+  }
+}
+.head {
+  text-align: center;
+  .info_time {
+    text-align: right;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+    margin-left: 10%;
+  }
+  .th {
+    padding: 35px 0;
+    .title {
+      padding-left: 10px;
+    }
+  }
+}
+.td {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  transition: 1s;
+  &.mouseover {
+    background: lavender;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    transition: 1s;
+  }
+}
+.ranking {
+  width: 2%;
+}
+.vari {
+  width: 8%;
+}
+.title {
+  width: 45%;
+  text-align: left;
+  align-items: center;
+  gap: 20px;
+  .left {
+    width: 70px;
+  }
+}
+.total {
+  width: 15%;
+}
+.views {
+  width: 15%;
+}
+.date {
+  width: 15%;
+}
+
+.pagination {
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    font-weight: bold;
+  }
+}
+
+.select_wrap {
+  padding: 5rem 0;
+  select {
+    min-width: 150px;
+    border: 0;
+    padding: 16px;
+    option {
+      border: 0;
+      padding: 16px;
+      :hover {
+        background: #222222;
+      }
+    }
+  }
+}
+
+/*brief page*/
+.brief_wrap {
+  padding-top: 5rem;
+  .brief_items {
+    gap: 60px;
+
+    .item {
+      position: relative;
+      width: 50%;
+      border-top: 1px solid #000;
+
+      .date {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        text-align: center;
+        span {
+          font-size: 13px;
+          padding-bottom: 8px;
+        }
+        h2 {
+          font-size: 46px;
+          font-weight: bold;
+        }
+      }
+      .badge {
+        display: inline-block;
+        margin: 30px 10px 12px 0;
+        border-radius: 12px;
+        padding:6px 12px;
+        color: #fc354e;
+        border: 1px solid #fc354e;
+        font-family: "Noto Sans KR",sans-serif;
+        font-size: 12px;
+      }
+
+      .text_area {
+        padding-right: 80px;
+        padding-bottom: 40px;
+        h3 {
+          font-size: 28px;
+          padding-bottom: 12px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          padding-bottom: 12px;
+        }
+      }
+      .img_area {
+        .info {
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 10px;
+          .row {
+            gap: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*about page*/
+.bg_black {
+  background: #000;
+  header {
+    .menu {
+      a {
+        color: white;
+      }
+    }
+
+  }
+}
+.about_wrap {
+  .container {
+    width: 1440px;
+  }
+  .moon {
+    margin-top: -500px;
+  }
+  width: 100%;
+  padding-top: 130px;
+  .head {
+    width: 100%;
+    height: 1400px;
+    background: url('../images/bg_kv_img.jpg') no-repeat center 100%;
+    h3 {
+      padding-top: 250px;
+      padding-bottom: 50px;
+      font-size: 46px;
+      font-weight: bold;
+      line-height: 70px;
+      text-align: left;
+      color: white;
+      span {
+        color: white;
+      }
+    }
+  }
+  .content {
+    padding-top: 300px;
+    .container {
+      position: relative;
+    }
+    .row {
+      width: 100%;
+      .vertical_text {
+        width: 30%;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 400px;
+        font-weight: 700;
+        color: #fff;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+      .text_area {
+        width: 70%;
+        .box {
+          margin-bottom: 500px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          h3 {
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 58px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 33px;
+          }
+          span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff334d;
+            line-height: 1;
+            margin-bottom: 33px;
+          }
+          p {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+          }
+          a {
+            color: white;
+          }
+          .list {
+            margin-top: 100px;
+            gap: 60px;
+            li {
+              width: calc(100% / 3);
+              border-top: 1px solid white;
+              h2 {
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 128px;
+                color: white;
+              }
+              p {
+                font-size: 14px;
+                line-height: 30px;
+              }
+              span {
+                margin-bottom: 0;
+                color: white;
+              }
+            }
+
+          }
+        }
+
+      }
+    }
+
+  }
+}

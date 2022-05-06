@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*헤더*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  padding: 25px 35px;
+}
+header .logo a {
+  display: block;
+  width: 150px;
+}
+header .title {
+  display: block;
+}
+header .title.none {
+  display: none;
+}
+header .menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+footer {
+  background: #000;
+}
+footer .container {
+  padding: 180px 100px 100px;
+}
+footer .menu {
+  padding-bottom: 320px;
+}
+footer .menu a {
+  display: block;
+  width: 100%;
+  font-size: 120px;
+  line-height: 140px;
+  font-weight: 700;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+footer .menu a:hover {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #000;
+}
+footer .info {
+  padding-bottom: 50px;
+}
+footer .info a {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+footer p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+footer p.gray_text {
+  color: #747474;
+}
+
+.content {
+  margin-bottom: 100px;
+}
+
+/*메인 차트*/
+.board_header h2 {
+  font-family: "";
+  font-size: 86px;
+  font-weight: bold;
+}
+.board_header h2 span {
+  font-family: "Jost";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-text-fill-color: #fff;
+  color: white;
+}
+.board_header h2 sup {
+  font-size: 12px;
+}
+.board_header p {
+  padding-top: 10px;
+}
+
+.head {
+  text-align: center;
+}
+.head .info_time {
+  text-align: right;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin-left: 10%;
+}
+.head .th {
+  padding: 35px 0;
+}
+.head .th .title {
+  padding-left: 10px;
+}
+
+.td {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  transition: 1s;
+}
+.td.mouseover {
+  background: lavender;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  transition: 1s;
+}
+
+.ranking {
+  width: 2%;
+}
+
+.vari {
+  width: 8%;
+}
+
+.title {
+  width: 45%;
+  text-align: left;
+  align-items: center;
+  gap: 20px;
+}
+.title .left {
+  width: 70px;
+}
+
+.total {
+  width: 15%;
+}
+
+.views {
+  width: 15%;
+}
+
+.date {
+  width: 15%;
+}
+
+.pagination {
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.pagination .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 100%;
+  font-weight: bold;
+}
+
+.select_wrap {
+  padding: 5rem 0;
+}
+.select_wrap select {
+  min-width: 150px;
+  border: 0;
+  padding: 16px;
+}
+.select_wrap select option {
+  border: 0;
+  padding: 16px;
+}
+.select_wrap select option :hover {
+  background: #222222;
+}
+
+/*brief page*/
+.brief_wrap {
+  padding-top: 5rem;
+}
+.brief_wrap .brief_items {
+  gap: 60px;
+}
+.brief_wrap .brief_items .item {
+  position: relative;
+  width: 50%;
+  border-top: 1px solid #000;
+}
+.brief_wrap .brief_items .item .date {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  text-align: center;
+}
+.brief_wrap .brief_items .item .date span {
+  font-size: 13px;
+  padding-bottom: 8px;
+}
+.brief_wrap .brief_items .item .date h2 {
+  font-size: 46px;
+  font-weight: bold;
+}
+.brief_wrap .brief_items .item .badge {
+  display: inline-block;
+  margin: 30px 10px 12px 0;
+  border-radius: 12px;
+  padding: 6px 12px;
+  color: #fc354e;
+  border: 1px solid #fc354e;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+}
+.brief_wrap .brief_items .item .text_area {
+  padding-right: 80px;
+  padding-bottom: 40px;
+}
+.brief_wrap .brief_items .item .text_area h3 {
+  font-size: 28px;
+  padding-bottom: 12px;
+  line-height: 40px;
+}
+.brief_wrap .brief_items .item .text_area p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+.brief_wrap .brief_items .item .img_area .info {
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.brief_wrap .brief_items .item .img_area .info .row {
+  gap: 24px;
+}
+
+/*about page*/
+.bg_black {
+  background: #000;
+}
+.bg_black header .menu a {
+  color: white;
+}
+
+.about_wrap {
+  width: 100%;
+  padding-top: 130px;
+}
+.about_wrap .container {
+  width: 1440px;
+}
+.about_wrap .moon {
+  margin-top: -500px;
+}
+.about_wrap .head {
+  width: 100%;
+  height: 1400px;
+  background: url("../images/bg_kv_img.jpg") no-repeat center 100%;
+}
+.about_wrap .head h3 {
+  padding-top: 250px;
+  padding-bottom: 50px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: left;
+  color: white;
+}
+.about_wrap .head h3 span {
+  color: white;
+}
+.about_wrap .content {
+  padding-top: 300px;
+}
+.about_wrap .content .container {
+  position: relative;
+}
+.about_wrap .content .row {
+  width: 100%;
+}
+.about_wrap .content .row .vertical_text {
+  width: 30%;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 400px;
+  font-weight: 700;
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.about_wrap .content .row .text_area {
+  width: 70%;
+}
+.about_wrap .content .row .text_area .box {
+  margin-bottom: 500px;
+}
+.about_wrap .content .row .text_area .box:last-child {
+  margin-bottom: 0;
+}
+.about_wrap .content .row .text_area .box h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 33px;
+}
+.about_wrap .content .row .text_area .box span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff334d;
+  line-height: 1;
+  margin-bottom: 33px;
+}
+.about_wrap .content .row .text_area .box p {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+.about_wrap .content .row .text_area .box a {
+  color: white;
+}
+.about_wrap .content .row .text_area .box .list {
+  margin-top: 100px;
+  gap: 60px;
+}
+.about_wrap .content .row .text_area .box .list li {
+  width: 33.3333333333%;
+  border-top: 1px solid white;
+}
+.about_wrap .content .row .text_area .box .list li h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 128px;
+  color: white;
+}
+.about_wrap .content .row .text_area .box .list li p {
+  font-size: 14px;
+  line-height: 30px;
+}
+.about_wrap .content .row .text_area .box .list li span {
+  margin-bottom: 0;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
