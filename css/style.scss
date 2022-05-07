@@ -180,6 +180,165 @@ footer {
   }
 }
 
+/* artist page */
+.artist_wrap{
+  position: relative;
+
+  .category{
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    max-height: 120vh;
+    padding-right: 50px;
+
+    .category_contents{
+      width: 100%;
+
+      .groups {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        height: 100%;
+        overflow-y: scroll;
+        .group{
+          li:first-child {
+            margin : 20px 0;
+          }
+          li {
+            margin : 10px 0;
+          }
+
+          .title {
+            font-size: 18px;
+            margin: 10px 0;
+          }
+          
+          li:not(:first-child) a{  
+            font-family: "Noto Sans KR",sans-serif;
+            font-size: 68px;
+            font-weight: bold;
+          }
+
+          li:not(:first-child) a:hover{
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black,0 -1px black;
+          }
+        }
+      }
+
+      ::-webkit-scrollbar {
+         display: none; 
+      }
+    }
+
+    .listNav{
+      position: absolute;
+      padding-left: 20px;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      text-align: center;
+      background-color: white;
+
+      a:first-child {
+        margin: 0
+      }
+
+      a {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        
+        span {
+          position: relative;
+          left:0;
+          font-family: 'Noto Sans KR', sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          color: #000;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+        }
+      }
+
+      a:hover span{
+        left: -38px;
+      }
+
+      a:hover:before{
+        width: 52px;
+      }
+
+      a:before {
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        width: 0;
+        height: 1px;
+        background-color: #000;
+        content: "";
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+      
+    }
+  }
+  .search_wrap{
+    position: fixed;
+    bottom: 18px;
+    max-width: 1180px;
+    margin: 0 auto;
+    z-index: 10;
+
+    input {
+      width: 420px;
+      height: 86px;
+      padding-left: 59px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 0;
+      font-family: "itc-avant-garde-gothic-pro",sans-serif;
+      font-size: 64px;
+      font-weight: 500;
+      color: #000;
+      line-height: 86px;
+      -webkit-transition: padding .3s;
+      transition: padding .3s;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input::placeholder{
+      color: #000;
+    }
+
+    
+  }
+
+  .search_wrap::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-image: url(https://www.kpop-radar.com/@resources/images/artist/icon_search.svg);
+    background-size: 100%;
+    opacity: 1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    content: "";
+  }
+
+  .search_wrap.absolute {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+  }
+}
+
 /*brief page*/
 .brief_wrap {
   padding-top: 5rem;
